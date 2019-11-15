@@ -9,5 +9,5 @@ RUN apk update && apk add --no-cache --virtual .build-deps \
     musl-dev \
     && apk add bash \
     && pip install -r requirements.txt \
-    && apk del build-deps
+    && apk del .build-deps
 EXPOSE 9099/tcp
